@@ -10,150 +10,171 @@
     <nav class="navbar">
         <a href="#" class="logo">AgroDigital</a>
         <div class="menu">
-            <a href="#about">Sobre Nosotros</a>
-            <a href="#testimonials">Testimonios</a>
-            <a href="#contact">Contactanos</a>
-            <a href="#team">Sobre el team</a>
+          <a href="#about" id="nav-about">Sobre Nosotros</a>
+          <a href="#testimonials" id="nav-testimonials">Testimonios</a>
+          <a href="#contact" id="nav-contact">Contáctanos</a>
+          <a href="#team" id="nav-team">Sobre el team</a>
         </div>
-        <button class="cta-button">Comienza Ya</button>
-    </nav>
+        <button class="cta-button" id="nav-start">Comienza Ya</button>
+        <div class="language-switch">
+          <span id="lang-es" class="lang-option active">ES</span>/<span id="lang-en" class="lang-option">EN</span>
+        </div>
+        <script src="i18n.js"></script>
+      </nav>
 
     <section class="hero">
         <div class="hero-logo">
-            <img src="images/AgroDigital.png" alt="AgroDigital Logo" />
+            <img src="AgroDigital.png" alt="AgroDigital Logo" />
         </div>
         <div class="hero-content">
-            <h1>Plataforma Digital para la Gestión del Ganado</h1>
-            <p>AgroDigital es una plataforma accesible que permite a los ganaderos pequeños y medianos gestionar la salud, reproducción, y productividad de su ganado, optimizando procesos con tecnología innovadora.</p>
-            <button class="start-button">COMENZAR</button>
+            <h1 id="hero-title">Plataforma Digital para la Gestión del Ganado</h1>
+            <p id="hero-desc">AgroDigital es una plataforma accesible que permite a los ganaderos pequeños y medianos gestionar la salud, reproducción, y productividad de su ganado, optimizando procesos con tecnología innovadora.</p>
+            <button class="start-button" id="hero-button">COMENZAR</button>
         </div>
     </section>
 
     <section id="about" class="about">
-        <h2>Sobre Nosotros</h2>
+        <h2 id="about-title">Sobre Nosotros</h2>
         <div class="about-columns">
             <div class="about-column">
-                <h3>Misión</h3>
-                <p>Revolucionar la gestión y trazabilidad del ganado para los pequeños y medianos ganaderos de Latinoamérica, a través de una plataforma digital accesible que optimice los procesos productivos y sanitarios.</p>
+                <h3 id="about-mission-title">Misión</h3>
+                <p id="about-mission-desc">Revolucionar la gestión y trazabilidad del ganado para los pequeños y medianos ganaderos de Latinoamérica, a través de una plataforma digital accesible que optimice los procesos productivos y sanitarios.</p>
             </div>
             <div class="about-column">
-                <h3>Visión</h3>
-                <p>AgroDigital se proyecta como la plataforma más destacada del sector ganadero en cuanto al registro y control de animales durante los próximos tres años. La startup busca consolidarse como un modelo de negocio sostenible, confiable y comprometido con la productividad rural mediante el uso de tecnología simple y efectiva.</p>
+                <h3 id="about-vision-title">Visión</h3>
+                <p id="about-vision-desc">AgroDigital se proyecta como la plataforma más destacada del sector ganadero en cuanto al registro y control de animales durante los próximos tres años. La startup busca consolidarse como un modelo de negocio sostenible, confiable y comprometido con la productividad rural mediante el uso de tecnología simple y efectiva.</p>
             </div>
             <div class="about-column">
-                <h3>Valores</h3>
+                <h3 id="about-values-title">Valores</h3>
                 <ul class="values-list">
-                    <li><strong>1. Innovación con propósito</strong> Soluciones tecnológicas pensadas para la trazabilidad, el control sanitario y la eficiencia del productor ganadero.</li>
-                    <li><strong>2. Sencillez y accesibilidad</strong> Herramientas intuitivas y fáciles de usar en el campo, para todos los niveles tecnológicos.</li>
-                    <li><strong>3. Transparencia y confianza</strong> Datos claros y confiables que fortalecen la relación entre productores, distribuidores y consumidores.</li>
-                    <li><strong>4. Producción sustentable</strong> Compromiso con prácticas responsables que cuidan al animal, al ambiente y a los recursos.</li>
-                    <li><strong>5. Conexión y comunidad</strong> Redes colaborativas entre todos los actores del sector ganadero.</li>
+                    <li>
+                        <strong id="about-value-1">1. Innovación con propósito</strong>
+                        <span id="about-value-1-text">Soluciones tecnológicas pensadas para la trazabilidad, el control sanitario y la eficiencia del productor ganadero.</span>
+                    </li>
+                    <li>
+                        <strong id="about-value-2">2. Sencillez y accesibilidad</strong>
+                        <span id="about-value-2-text">Herramientas intuitivas y fáciles de usar en el campo, para todos los niveles tecnológicos.</span>
+                    </li>
+                    <li>
+                        <strong id="about-value-3">3. Transparencia y confianza</strong>
+                        <span id="about-value-3-text">Datos claros y confiables que fortalecen la relación entre productores, distribuidores y consumidores.</span>
+                    </li>
+                    <li>
+                        <strong id="about-value-4">4. Producción sustentable</strong>
+                        <span id="about-value-4-text">Compromiso con prácticas responsables que cuidan al animal, al ambiente y a los recursos.</span>
+                    </li>
+                    <li>
+                        <strong id="about-value-5">5. Conexión y comunidad</strong>
+                        <span id="about-value-5-text">Redes colaborativas entre todos los actores del sector ganadero.</span>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section id="testimonials" class="testimonials">
-        <h2>Testimonios</h2>
+        <h2 id="testimonials-title">Testimonios</h2>
         <div class="testimonials-grid">
             <div class="testimonial">
                 <div class="testimonial-quote">"</div>
                 <div class="testimonial-content">
-                    <p>Desde que implementamos AgroDigital, llevamos un control mucho más preciso del historial sanitario de cada animal. Ha mejorado nuestra productividad, calidad y control.</p>
-                    <span class="testimonial-author">• Luciana Ferreira</span>
+                    <p id="testimonial-1">Desde que implementamos AgroDigital, llevamos un control mucho más preciso del historial sanitario de cada animal. Ha mejorado nuestra productividad, calidad y control.</p>
+                    <span class="testimonial-author" id="testimonial-1-author">• Luciana Ferreira</span>
                 </div>
             </div>
             <div class="testimonial">
                 <div class="testimonial-quote">"</div>
                 <div class="testimonial-content">
-                    <p>La plataforma facilita el registro de vacunas, tratamientos y controles sanitarios. Toda la info está documentada y accesible desde cualquier dispositivo.</p>
-                    <span class="testimonial-author">• Ricardo Gómez</span>
+                    <p id="testimonial-2">La plataforma facilita el registro de vacunas, tratamientos y controles sanitarios. Toda la info está documentada y accesible desde cualquier dispositivo.</p>
+                    <span class="testimonial-author" id="testimonial-2-author">• Ricardo Gómez</span>
                 </div>
             </div>
             <div class="testimonial">
                 <div class="testimonial-quote">"</div>
                 <div class="testimonial-content">
-                    <p>Con AgroDigital, centralizamos toda la información de nuestro rodeo. Podemos tomar decisiones más rápidas y basadas en datos reales.</p>
-                    <span class="testimonial-author">• Estancia La Criolla</span>
+                    <p id="testimonial-3">Con AgroDigital, centralizamos toda la información de nuestro rodeo. Podemos tomar decisiones más rápidas y basadas en datos reales.</p>
+                    <span class="testimonial-author" id="testimonial-3-author">• Estancia Criolla</span>
                 </div>
             </div>
             <div class="testimonial">
                 <div class="testimonial-quote">"</div>
                 <div class="testimonial-content">
-                    <p>Antes usábamos planillas en papel. Hoy con AgroDigital cargamos los datos desde el celular. Es rápido, simple y se nota en los resultados.</p>
-                    <span class="testimonial-author">• Pedro Ruiz</span>
+                    <p id="testimonial-4">Antes usábamos planillas en papel. Hoy con AgroDigital cargamos los datos desde el celular. Es rápido, simple y se nota en los resultados.</p>
+                    <span class="testimonial-author" id="testimonial-4-author">• Pedro Ruiz</span>
                 </div>
             </div>
             <div class="testimonial">
                 <div class="testimonial-quote">"</div>
                 <div class="testimonial-content">
-                    <p>Necesitábamos cumplir con exigencias internacionales de trazabilidad. AgroDigital nos dio una solución integral que facilitó auditorías y mejoró la confianza de nuestros clientes.</p>
-                    <span class="testimonial-author">• Sandra Villaba</span>
+                    <p id="testimonial-5">Necesitábamos cumplir con exigencias internacionales de trazabilidad. AgroDigital nos dio una solución integral que facilitó auditorías y mejoró la confianza de nuestros clientes.</p>
+                    <span class="testimonial-author" id="testimonial-5-author">• Sandra Villaba</span>
                 </div>
             </div>
             <div class="testimonial">
                 <div class="testimonial-quote">"</div>
                 <div class="testimonial-content">
-                    <p>Lo que más valoro de AgroDigital es su interfaz intuitiva. Incluso los trabajadores del campo, sin experiencia digital previa, pudieron adaptarse rápido. La app nos conecta a todos en tiempo real.</p>
-                    <span class="testimonial-author">• Martín Ayala</span>
+                    <p id="testimonial-6">Lo que más valoro de AgroDigital es su interfaz intuitiva. Incluso los trabajadores del campo, sin experiencia digital previa, pudieron adaptarse rápido. La app nos conecta a todos en tiempo real.</p>
+                    <span class="testimonial-author" id="testimonial-6-author">• Martín Ayala</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contactanos</h2>
+        <h2 id="contact-title">Contactanos</h2>
         <form class="contact-form">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo" required>
-            <input type="text" placeholder="Descripción">
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+            <input type="text" id="contact-name" placeholder="Nombre" required>
+            <input type="email" id="contact-email" placeholder="Correo" required>
+            <input type="text" id="contact-desc" placeholder="Descripción">
+            <textarea id="contact-message" placeholder="Mensaje" required></textarea>
+            <button type="submit" id="contact-send">Enviar</button>
         </form>
     </section>
 
     <section id="team" class="team">
-        <h2>Sobre el team</h2>
-        <p>AgroDigital fue desarrollado por los siguientes desarrolladores estudiantes de la UPC que colaboraron continuamente para hacer realidad este proyecto:</p>
+        <h2 id="team-title">Sobre el team</h2>
+        <p id="team-desc">AgroDigital fue desarrollado por los siguientes desarrolladores estudiantes de la UPC que colaboraron continuamente para hacer realidad este proyecto:</p>
         <div class="team-grid">
             <div class="team-member">
-                <img src="images/perfilEstudiantes_Luciana.jpg" alt="Luciana Sanchez">
-                <h3>Luciana Sanchez</h3>
+                <img src="perfilEstudiantes_Luciana.jpg" alt="Luciana Sanchez">
+                <h3 id="team-member-1">Luciana Sanchez</h3>
             </div>
             <div class="team-member">
-                <img src="images/perfilEstudiantes_Mafer.jpg" alt="María Peña">
-                <h3>María Peña</h3>
+                <img src="perfilEstudiantes_Mafer.jpg" alt="María Peña">
+                <h3 id="team-member-2">María Peña</h3>
             </div>
             <div class="team-member">
-                <img src="images/perfilEstudiantes_Rodrigo.png" alt="Rodrigo Salvador">
-                <h3>Rodrigo Salvador</h3>
+                <img src="perfilEstudiantes_Rodrigo.png" alt="Rodrigo Salvador">
+                <h3 id="team-member-3">Rodrigo Salvador</h3>
             </div>
             <div class="team-member">
-                <img src="images/perfilEstudiantes_Nelson.jpg" alt="Nelson Guerrero">
-                <h3>Nelson Guerrero</h3>
+                <img src="perfilEstudiantes_Nelson.jpg" alt="Nelson Guerrero">
+                <h3 id="team-member-4">Nelson Guerrero</h3>
             </div>
             <div class="team-member">
-                <img src="images/perfilEstudiantes_Mapa.jpg" alt="María Pilares">
-                <h3>María Pilares</h3>
+                <img src="perfilEstudiantes_Mapa.jpg" alt="María Pilares">
+                <h3 id="team-member-5">María Pilares</h3>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-logo">
-            <img src="images/AgroDigital.png" alt="AgroDigital Logo">
+            <img src="AgroDigital.png" alt="AgroDigital Logo">
         </div>
         <div class="social-icons">
-            <a href="#"><span>f</span></a>
-            <a href="#"><span>in</span></a>
-            <a href="#"><span>t</span></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener"><span>f</span></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><span>in</span></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><span>X</span></a>
         </div>
         <div class="footer-links">
-            <a href="#">Política de privacidad</a>
-            <a href="#">Política de cookies</a>
-            <a href="#">Aviso Legal</a>
+            <a href="#" id="footer-privacy">Política de privacidad</a>
+            <a href="#" id="footer-cookies">Política de cookies</a>
+            <a href="#" id="footer-legal">Aviso Legal</a>
         </div>
-        <p>© 2025 LPI Media. All Rights Reserved.</p>
+        <p>© 2025 GanTrace. All Rights Reserved.</p>
     </footer>
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
