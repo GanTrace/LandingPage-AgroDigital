@@ -57,7 +57,13 @@ body {
     gap: 30px;
 
 }
-
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .menu a {
     text-decoration: none;
     color: #000;
@@ -72,7 +78,7 @@ body {
 
 .cta-button {
     background-color: #925930;
-    color: white;
+    color: #f5f0e6;
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
@@ -395,7 +401,35 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f5f0e6;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
     .hero {
+        padding-top: 190px;
         flex-direction: column;
         gap: 30px;
     }
@@ -423,16 +457,40 @@ body {
 }
 
 @media (max-width: 900px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
     .navbar {
         flex-direction: column;
         align-items: stretch;
         padding: 20px 5%;
     }
+    
     .menu {
         flex-direction: column;
         gap: 10px;
         align-items: flex-start;
         margin: 15px 0;
+        display: none;
+        background-color: #f5f0e6;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+    .menu.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
     }
     .cta-button {
         width: 100%;
@@ -441,5 +499,36 @@ body {
     .language-switch {
         align-self: flex-end;
         margin: 0 0 10px 0;
+    }
+    .hero{
+        padding-top: 190px;
+    }
+}
+
+@media (min-width: 901px) {
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+    .navbar {
+        padding: 20px 2%;
+    }
+    .hero {
+        padding: 140px 2%;
+    }
+    .about {
+        padding: 60px 2%;
+    }
+    .testimonials {
+        padding: 60px 2%;
+    }
+    .contact {
+        padding: 60px 2%;
+    }
+    .team {
+        padding: 60px 2%;
     }
 }
