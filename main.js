@@ -1,9 +1,9 @@
 document.getElementById('nav-start').onclick = function() {
-    window.location.href = 'https://gantrace.github.io/AgroDigital--FrontendApp/'; 
+    window.location.href = 'https://agrodigital.netlify.app/'; 
 };
 
 document.getElementById('hero-button').onclick = function() {
-    window.location.href = 'https://gantrace.github.io/AgroDigital--FrontendApp/'; 
+    window.location.href = 'https://agrodigital.netlify.app/'; 
 };
   
 document.querySelector('.menu-toggle').addEventListener('click', () => {
